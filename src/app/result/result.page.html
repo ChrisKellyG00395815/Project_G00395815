@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> <!-- Creates a back button for the user-->
+    </ion-buttons>
+    <ion-title>Favourite Movie?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>Current favourite movie is: {{myStatus}}</ion-title> <!-- Fetches last chosen favourite movie-->
+  <ion-list>
+  <ion-radio-group [(ngModel)]="myStatus">
+  <ion-item>
+  <ion-label>Shutter Island</ion-label>
+  <ion-radio value="shutter island"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Pulp Fiction</ion-label>
+  <ion-radio value="pulp fiction"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Fight club</ion-label>
+  <ion-radio value="fight club" ></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveStatus()">Save</ion-button> <!-- calls the saveStatus() method-->
+  </ion-content>

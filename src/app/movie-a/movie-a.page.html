@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>  <!-- Creates a back button for the user-->
+    </ion-buttons>
+    <ion-title>MovieA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button routerLink="/movie-b">Movie B</ion-button>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">MovieA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://resizing.flixster.com/QB1d4yHp9Npc2d5XoEFPYnJ-arY=/206x305/v2/https://flxt.tmsimg.com/assets/p3531967_p_v13_an.jpg" />
+      <ion-card-header>
+        <ion-card-title>Shutter Island</ion-card-title>
+        <ion-card-subtitle>Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        This movie is a great watch!.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

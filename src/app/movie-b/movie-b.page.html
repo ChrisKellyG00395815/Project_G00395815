@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> <!-- Creates a back button for the user-->
+    </ion-buttons>
+    <ion-title>MovieB</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button routerLink="/movie-c">Movie C</ion-button>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">MovieB</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/en/0/06/Pulp_Fiction_%28Soundtrack%29.png" />
+      <ion-card-header>
+        <ion-card-title>Pulp Fiction</ion-card-title>
+        <ion-card-subtitle>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        This movie is a Quentin Tarintino classic!
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
